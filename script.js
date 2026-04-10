@@ -10,3 +10,23 @@
 // - button to start audio processing
 // - canvas for animation of dial 
 // - unit testing to determina accuracy
+let startButtonState = 'off'
+
+const startButton = document.getElementById("start-button")
+
+function startButtonEventListener() {
+    function click() {
+        if (startButtonState=='off') {
+            startButton.innerHTML="stop"
+            startButtonState='on'
+
+            //call init tuner stuff
+        }else {
+            startButton.innerHTML="start"
+            startButtonState='off'
+            //call release resources
+        }
+    }
+    startButton.addEventListener('click', click)
+}
+startButtonEventListener()

@@ -1,0 +1,22 @@
+body {
+    font-family: Consolas, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-button {
+    background-color: lightpink;
+    color: black;
+    width: 120px;
+    text-align: center;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1.4rem;
+
+}
+
+#start-button:hover {
+    background-color: lightcoral;
+}
+
